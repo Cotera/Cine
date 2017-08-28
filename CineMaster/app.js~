@@ -80,7 +80,7 @@ Vue.component( 'entradas-content', {
 
 
 Vue.component( 'peli', {
-	/*data: {
+	data: {
 		titulo: 'Pel&iacute;culas',
 		Peliculas:[{
 			Id: 1,
@@ -95,7 +95,7 @@ Vue.component( 'peli', {
 			Anio:2012,
 			Sala:4
 		}]
-	},*/
+	},
 	components:{
 		'pelis-header': pelis-header,
 		'pelis-content': pelis-content
@@ -107,7 +107,7 @@ Vue.component( 'peli', {
 });
 
 Vue.component( 'entrada', {
-	/*data: {
+	data: {
 		titulo: 'Entradas',
 		Entradas:[{
 			Id: 11,
@@ -120,7 +120,7 @@ Vue.component( 'entrada', {
 			Butaca: 9,
 			Titular: "Maribel"
 		}]
-	},*/
+	},
 	components:{
 		'entradas-header': entradas-header,
 		'entradas-content': entradas-content
