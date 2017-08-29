@@ -1,0 +1,14 @@
+{
+  "name": "CineMaestro",
+  "version": "1.0.0",
+  "description": "Gestion de Peliculas y entradas de cine",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rcotera",
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^2.4.2"
+  }
+}
