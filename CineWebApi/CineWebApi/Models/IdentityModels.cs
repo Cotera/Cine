@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
+using System;
 
 namespace CineWebApi.Models
 {
@@ -20,7 +21,9 @@ namespace CineWebApi.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
-        public ApplicationDbContext()
+		[ThreadStatic]
+		public static ApplicationDbContext applicationDbContext;
+		public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
@@ -29,5 +32,9 @@ namespace CineWebApi.Models
         {
             return new ApplicationDbContext();
         }
-    }
+
+		public System.Data.Entity.DbSet<CineWebApi.Entrada> Entrada { get; set; }
+		public System.Data.Entity.DbSet<CineWebApi.Pelicula> Pelicula { get; set; }
+
+	}
 }

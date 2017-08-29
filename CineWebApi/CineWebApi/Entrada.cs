@@ -11,8 +11,7 @@ namespace CineWebApi
 
 		public int Fila { get; set; }
 		public int Butaca { get; set; }
-		public DateTime Fecha { get; set; }
-		public long Id_Pelicula { get; set; }
+		public string Titular { get; set; }
 
 	}
 }
