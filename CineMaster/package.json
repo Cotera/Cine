@@ -1,0 +1,29 @@
+{
+  "name": "cinemaster",
+  "version": "1.0.0",
+  "description": "frontend del cine",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cotera/Cine.git"
+  },
+  "keywords": [
+    "cine"
+  ],
+  "author": "rcotera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cotera/Cine/issues"
+  },
+  "homepage": "https://github.com/Cotera/Cine#readme",
+  "devDependencies": {
+    "webpack": "^3.5.5"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "vue": "^2.4.2"
+  }
+}
